@@ -1,0 +1,181 @@
+@font-face {
+    font-family: Novitha;
+    src: url("../fonts/Novitha.otf");
+}
+
+@font-face {
+    font-family: Squared;
+    src: url("../fonts/Squared.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Thin;
+    src: url("../fonts/Roboto-Thin.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+
+.roboto {
+    font-family: Roboto, sans-serif;
+}
+
+.roboto-thin {
+    font-family: Roboto-Thin, sans-serif;
+}
+
+.roboto-bold {
+    font-family: Roboto-Bold, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#parallax {
+    background-image: url("../img/bg.jpg");
+
+    /* Altura */
+    height: auto;
+    text-shadow:0 0 10px rgba(0,0,0,0.7);
+
+    /* Cria o efeito parallax */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-pic {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.nome {
+    color: ghostwhite;
+    padding-top: 30px;
+    font-size: 700%;
+    font-family: Novitha;
+}
+
+.dev {
+    color: ghostwhite;
+    font-size: 250%;
+    font-family: Squared;
+}
+
+.inblock {
+    padding-top: 15%;
+    padding-bottom: 4%;
+}
+
+.bloco {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.titulo {
+    margin-bottom: 40px;
+}
+
+.barras {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.parallax2 {
+    background-image: url("../img/tori.jpg");
+
+    /* Altura */
+    height: 600px;
+    text-shadow:0 0 10px rgba(0,0,0,0.7);
+
+    /* Cria o efeito parallax */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    background-image: url("../img/wallpaper_dev_book.jpg");
+
+    /* Altura */
+    height: 600px;
+    text-shadow:0 0 10px rgba(0,0,0,0.7);
+
+    /* Cria o efeito parallax */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax4 {
+    background-image: url("../img/guitar.jpg");
+
+    /* Altura */
+    height: 600px;
+    text-shadow:0 0 10px rgba(0,0,0,0.7);
+
+    /* Cria o efeito parallax */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagem {
+    display: none;
+    width: 100%;
+}
+
+#paula:hover {
+    color: cornflowerblue;
+}
+
+#face:hover {
+    color: #3B5998;
+}
+
+#insta:hover {
+    color: #cd486b;
+}
+
+#in:hover {
+    color: #0077B5;
+}
+
+#git:hover {
+    color: #6cc644;;
+}
+
+#kaggle:hover {
+    color: #1da1f2;
+}
+
+#mob {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #desk {display: none}
+    #mob {display: block}
+    .dev {padding-top: 40px}
+    .nome {font-size: 500%; padding-top: 0px; padding-bottom: 30px}
+    .profile-pic {width: 50%}
+    .inblock {padding-top: 5%; padding-bottom: 4%}
+    .parallax2 {display: none}
+    .parallax3 {display: none}
+    .parallax4 {display: none}
+    .imagem {display: block}
+    #scroll {display: none}
+}

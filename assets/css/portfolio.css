@@ -1,0 +1,116 @@
+@font-face {
+    font-family: Squared;
+    src: url("../fonts/Squared.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Thin;
+    src: url("../fonts/Roboto-Thin.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+
+.roboto {
+    font-family: Roboto, sans-serif;
+}
+
+.roboto-thin {
+    font-family: Roboto-Thin, sans-serif;
+}
+
+.roboto-bold {
+    font-family: Roboto-Bold, sans-serif;
+}
+
+a {
+    color: black;
+}
+
+.parallax {
+    background-image: url("../img/long-cut.jpg");
+
+    /* Altura */
+    height: auto;
+    text-shadow:0 0 10px rgba(0,0,0,0.7);
+
+    /* Cria o efeito parallax */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.h1 {
+    color: white;
+    font-family: Squared;
+    font-size: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0px;
+}
+
+.bloco {
+    padding-top: 80px;
+}
+
+.titulo {
+    margin-bottom: 40px;
+}
+
+.port-img {
+    height: auto;
+    width: auto;
+}
+
+.borda {
+    border: 1px solid black;
+}
+
+.direita {
+    text-align: right;
+    margin-right: 15px!important;
+}
+
+.hide {display: none}
+
+#paula:hover {
+    color: cornflowerblue;
+}
+
+#face:hover {
+    color: #3B5998;
+}
+
+#insta:hover {
+    color: #cd486b;
+}
+
+#in:hover {
+    color: #0077B5;
+}
+
+#git:hover {
+    color: #6cc644;;
+}
+
+#kaggle:hover {
+    color: #1da1f2;
+}
+
+#port-list-mob {display: none}
+
+@media (max-width: 600px) {
+	.port-img {width: 100%}
+	.h1 {font-size: 50px; padding-top: 50px; padding-bottom: 50px;}
+	.parallax {background-size: auto 100%}
+	#port-list {display: none}
+	#port-list-mob {display: block}
+}
