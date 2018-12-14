@@ -90,7 +90,7 @@
             echo "<p class='roboto'>Hello, I'm Rafael, I'm $idade years old and I'm passionate about technology, photography and music.</p>";
          ?>
         <p class="roboto">I am currently studying Computer Science at the Federal University of Alfenas (Unifal-MG) and I studied in Japan for a year with a scholarship from the brazilian government called Science without Borders.</p>
-        <p class="roboto">Although still a graduate student, I also work as a freelancer developing websites and systems.</p>
+        <p class="roboto">Although still a graduate student, I also work as a freelancer developing websites.</p>
         <p class="roboto">I am a very honest and sociable person. I work very well in groups, I am organized and responsible with my daily tasks.</p>
 
         <h3 class="titulo roboto-bold">Exchange</h3>
@@ -121,7 +121,7 @@
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
                 </div>
-                <li>Python</li>
+                <li>Python for Data Science</li>
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
                 </div>
@@ -137,27 +137,52 @@
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
                 </div>
+                <li>Programming</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                </div>
+                <li>Design</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
+                <li>Photography</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                </div>
+                <li>Guitar</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+                <li>Singing</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">try to</div>
+                </div>
+                <li>Trips</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">love it</div>
+                </div>
+                <li>English</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100">99%</div>
+                </div>
+                <li>Portuñol</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">perfect</div>
+                </div>
+                <li>Spanish</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">a bit</div>
+                </div>
+                <li>Japanese</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">can do it</div>
+
             </ul>
         </div>
     </div>
 
     <div class="parallax3"></div>
     <img class="imagem" src="assets/img/wallpaper_dev_book.jpg">
-
-    <div class="container text-center bloco" id="hobbies">
-        <h2 class="titulo roboto-bold">Interests & Hobbies</h2>
-        <ul class="list-unstyled roboto">
-            <li>Programming</li>
-            <li>Design</li>
-            <li>Photography</li>
-            <li>Guitar</li>
-            <li>Traveling</li>
-            <li>Foreign Languages</li>
-        </ul>
-    </div>
-
-    <div class="parallax4"></div>
-    <img class="imagem" src="assets/img/guitar.jpg">
 
     <?php require_once "contact.html"; ?>
 
