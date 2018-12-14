@@ -48,7 +48,6 @@
                     <!--<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>-->
                     <a class="nav-item nav-link" href="#about">About</a>
                     <a class="nav-item nav-link" href="#skills">Skills</a>
-                    <a class="nav-item nav-link" href="#hobbies">Hobbies</a>
                     <a class="nav-item nav-link" href="/portfolio/index-en.php">Portfolio</a>
                     <a class="nav-item nav-link" href="#contact">Contact</a>
                     <!--<a class="nav-item nav-link disabled" href="#">Disabled</a>-->
