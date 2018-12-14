@@ -1,0 +1,173 @@
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119621238-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-119621238-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Rafael Machado</title>
+    <link rel="icon" href="assets/img/rm-black.png">
+    <?php require_once "import.html"; ?>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    <div id="home">
+        <div id="parallax">
+            <div class="container inblock">
+                <div id="desk">
+                    <img class="mx-auto d-block profile-pic" src="assets/img/pic-profile.jpg" alt="Rafael Machado foto perfil">
+                    <h1 class="text-center nome">Rafael Machado</h1>
+                    <h2 class="text-center dev">developer</h2>
+                </div>
+                <div id="mob">
+                    <h1 class="text-center nome">Rafael Machado</h1>
+                    <img class="mx-auto d-block profile-pic" src="assets/img/pic-profile.jpg" alt="Rafael Machado foto perfil">
+                    <h2 class="text-center dev">developer</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#home"><img src="assets/img/rm-white.png" height="30" alt="Rafael Machado logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav roboto">
+                    <!--<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>-->
+                    <a class="nav-item nav-link" href="#about">About</a>
+                    <a class="nav-item nav-link" href="#skills">Skills</a>
+                    <a class="nav-item nav-link" href="#hobbies">Hobbies</a>
+                    <a class="nav-item nav-link" href="/portfolio/index-en.php">Portfolio</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
+                    <!--<a class="nav-item nav-link disabled" href="#">Disabled</a>-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="http://rafaelmachado.info">pt</a>
+                    <a id="scroll" class="nav-item nav-link" href="#about"><i class="fas fa-angle-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        function resize () {
+            document.getElementById("parallax").style.height = (window.innerHeight - 58) + "px";
+        }
+        resize();
+        window.onresize = function() {
+            resize();
+        };
+    </script>
+
+    <div class="container text-center bloco" id="about">
+        <h2 class="titulo roboto-bold">About me</h2>
+        <?php 
+            // Calcular idade em tempo real
+
+            $data = "05/05/1995";
+            // Separa em dia, mês e ano
+            list($dia, $mes, $ano) = explode('/', $data);
+   
+            // Descobre que dia é hoje e retorna a unix timestamp
+            $hoje = mktime(0, 0, 0, date('m'), date('d'), date('Y'));
+            // Descobre a unix timestamp da data de nascimento do fulano
+            $nascimento = mktime( 0, 0, 0, $mes, $dia, $ano);
+   
+            // Depois apenas fazemos o cálculo já citado :)
+            $idade = floor((((($hoje - $nascimento) / 60) / 60) / 24) / 365.25);
+            echo "<p class='roboto'>Hello, I'm Rafael, I'm $idade years old and I'm passionate about technology, photography and music.</p>";
+         ?>
+        <p class="roboto">I am currently studying Computer Science at the Federal University of Alfenas (Unifal-MG) and I studied in Japan for a year with a scholarship from the brazilian government called Science without Borders.</p>
+        <p class="roboto">Although still a graduate student, I also work as a freelancer developing websites and systems.</p>
+        <p class="roboto">I am a very honest and sociable person. I work very well in groups, I am organized and responsible with my daily tasks.</p>
+
+        <h3 class="titulo roboto-bold">Exchange</h3>
+        <p class="roboto">In August 2015 I was fortunate enough to be able to travel to Sapporo in Japan, where I lived for a year with the Science without Borders scholarship studying at Hokkaido University.</p>
+        <p class="roboto">Living abroad was a very rewarding experience, as I acquired fluency in English and learned the basics of Japanese. In addition, I have matured enough and created bonds of friendship with people from all over the world!</p>
+    </div>
+
+    <div class="parallax2"></div>
+    <img class="imagem" src="assets/img/tori.jpg">
+
+    <div class="container bloco" id="skills">
+        <h2 class="titulo text-center roboto-bold">Skills</h2>
+        <div class="barras">
+            <ul class="list-unstyled roboto">
+                <li>HTML 5</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+                <li>CSS 3</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+                <li>JavaScript</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                </div>
+                <li>PHP 7</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                </div>
+                <li>Python</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
+                <li>C</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                </div>
+                <li>Illustrator</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+                <li>Photoshop</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="parallax3"></div>
+    <img class="imagem" src="assets/img/wallpaper_dev_book.jpg">
+
+    <div class="container text-center bloco" id="hobbies">
+        <h2 class="titulo roboto-bold">Interests & Hobbies</h2>
+        <ul class="list-unstyled roboto">
+            <li>Programming</li>
+            <li>Design</li>
+            <li>Photography</li>
+            <li>Guitar</li>
+            <li>Traveling</li>
+            <li>Foreign Languages</li>
+        </ul>
+    </div>
+
+    <div class="parallax4"></div>
+    <img class="imagem" src="assets/img/guitar.jpg">
+
+    <?php require_once "contact.html"; ?>
+
+    <div class="container text-center roboto-thin">
+        <small>Rafael Machado - © Curriculum Vitae</small>
+    </div>
+
+    <script type="text/javascript">
+        <?php require_once "assets/js/smooth-scroll.js"; ?>
+    </script>
+
+</body>
+</html>
