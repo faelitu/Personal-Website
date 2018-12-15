@@ -166,15 +166,15 @@
                 </div>
                 <li>Portuñol</li>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">perfect</div>
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">perfecto</div>
                 </div>
                 <li>Spanish</li>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">a bit</div>
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">un poquito</div>
                 </div>
                 <li>Japanese</li>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">can do it</div>
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">sukoshi</div>
 
             </ul>
         </div>

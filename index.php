@@ -166,7 +166,7 @@
                 </div>
                 <li>Portunhol</li>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">perfeito</div>
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">perfecto</div>
                 </div>
                 <li>Espanhol</li>
                 <div class="progress">
