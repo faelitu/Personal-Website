@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<?php require_once "config.php" ?>
+<html lang="<?php echo $lang; ?>">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119621238-1"></script>
@@ -17,7 +18,16 @@
     <title>Rafael Machado</title>
     <link rel="icon" href="assets/img/rm-black.png">
     <?php require_once "import.html"; ?>
-    <script src="assets/js/main.js"></script>
+    <?php require_once "functions.php"?>
 </head>
-<?php require_once "config.php"; ?>
+<body>
+    <?php 
+    if ($lang === "pt-br") {
+        require_once "body-pt.php";
+    } else {
+        require_once "body-en.php";
+    }
+    ?>
+    <?php require_once "import2.html"; ?>
+</body>
 </html>

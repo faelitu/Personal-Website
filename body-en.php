@@ -1,16 +1,16 @@
-<body>
+
     <div id="home">
         <div id="parallax">
             <div class="container inblock">
-                <div id="desk">
-                    <img class="mx-auto d-block profile-pic" src="assets/img/pic-profile.jpg" alt="Rafael Machado foto perfil">
-                    <h1 class="text-center nome">Rafael Machado</h1>
-                    <h2 class="text-center dev">developer</h2>
+                <div id="desk" class="text-center">
+                    <img onclick="transparent(this)" class="profile-pic" src="assets/img/pic-profile.jpg" alt="Rafael Machado foto perfil">
+                    <h1 class="nome">Rafael Machado</h1>
+                    <h2 class="dev">developer</h2>
                 </div>
-                <div id="mob">
-                    <h1 class="text-center nome">Rafael Machado</h1>
-                    <img class="mx-auto d-block profile-pic" src="assets/img/pic-profile.jpg" alt="Rafael Machado foto perfil">
-                    <h2 class="text-center dev">developer</h2>
+                <div id="mob" class="text-center>
+                    <h1 class="nome">Rafael Machado</h1>
+                    <img onclick="transparent(this)" class="profile-pic" src="assets/img/pic-profile.jpg" alt="Rafael Machado foto perfil">
+                    <h2 class="dev">developer</h2>
                 </div>
             </div>
         </div>
@@ -27,12 +27,12 @@
                     <!--<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>-->
                     <a class="nav-item nav-link" href="#about">About</a>
                     <a class="nav-item nav-link" href="#skills">Skills</a>
-                    <a class="nav-item nav-link" href="/portfolio/index-en.php">Portfolio</a>
+                    <a class="nav-item nav-link" href="<?php echo $root; ?>portfolio/?lang=en">Portfolio</a>
                     <a class="nav-item nav-link" href="#contact">Contact</a>
                     <!--<a class="nav-item nav-link disabled" href="#">Disabled</a>-->
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="?lang=pt">pt</a>
+                    <a class="nav-item nav-link" href="?lang=pt-br">pt</a>
                     <a id="scroll" class="nav-item nav-link" href="#about"><i class="fas fa-angle-down"></i></a>
                 </div>
             </div>
@@ -168,8 +168,7 @@
         <small>Rafael Machado - © Curriculum Vitae</small>
     </div>
 
+    <!--Smooth Scroll-->
     <script type="text/javascript">
         <?php require_once "assets/js/smooth-scroll.js"; ?>
     </script>
-
-</body>
