@@ -7,7 +7,7 @@
                     <h1 class="nome">Rafael Machado</h1>
                     <h2 class="dev">developer</h2>
                 </div>
-                <div id="mob" class="text-center>
+                <div id="mob" class="text-center">
                     <h1 class="nome">Rafael Machado</h1>
                     <img onclick="transparent(this)" class="profile-pic" src="assets/img/pic-profile.jpg" alt="Rafael Machado foto perfil">
                     <h2 class="dev">developer</h2>
@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <nav id="barranav" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#home"><img src="assets/img/rm-white.png" height="30" alt="Rafael Machado logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

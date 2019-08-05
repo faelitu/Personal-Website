@@ -105,16 +105,25 @@ function twinkle(element, delay) {
 	});
 }
 
+function check() {
+	$pos = document.getElementById('barranav').offsetTop;
+  	if (window.pageYOffset === $pos) {
+  		$(".star").hide();
+  	} else {
+  		$(".star").show();
+  	}
+}
+
 //stars
 $(document).ready(function(){
 	var qtd = 100;
-  	var star1 = "<b id='starA' style='cursor: default; color: white; font-size: 30px; position:fixed; text-shadow: 0 0 10px white'>&#8226</b>";
-  	var star2 = "<b id='starB' style='cursor: default; color: white; font-size: 20px; position:fixed; text-shadow: 0 0 10px white'>&#8226</b>";
-  	var lastStar = "<b id='star-1' style='cursor: default; color: white; font-size: 10px; position:fixed; text-shadow: 0 0 10px white'>&#8226</b>";
+  	var star1 = "<b id='starA' class='star' style='cursor: default; color: white; font-size: 30px; position:fixed; text-shadow: 0 0 10px white'>&#8226</b>";
+  	var star2 = "<b id='starB' class='star' style='cursor: default; color: white; font-size: 20px; position:fixed; text-shadow: 0 0 10px white'>&#8226</b>";
+  	var lastStar = "<b id='star-1' class='star' style='cursor: default; color: white; font-size: 10px; position:fixed; text-shadow: 0 0 10px white'>&#8226</b>";
   	$(".inblock").after(star1, star2, lastStar); // Insert new elements after <img>
   	for (i = 0; i < qtd; i++) {
   		var size = Math.floor(Math.random() * 20) + 10;
-  		var nextStar = "<b id='star"+i+"' style='cursor: default; color: white; font-size: "+size+"px; position:fixed; text-shadow: 0 0 10px white; z-index: 0'>&#8226</b>";
+  		var nextStar = "<b id='star"+i+"' class='star' style='cursor: default; color: white; font-size: "+size+"px; position:fixed; text-shadow: 0 0 10px white; z-index: 0'>&#8226</b>";
   		$("#star"+(i-1)).after(nextStar);
 
   		lastStar = nextStar;
@@ -143,6 +152,8 @@ $(document).ready(function(){
   		var delay = Math.floor(Math.random() * 3000);
   		twinkle(document.getElementById('star'+i), delay);
   	}
+
+  	document.getElementById("all").addEventListener("wheel", check);
 });
 
 //TODO criar funçao pra esconder a estrela, caso a foto passe por ela

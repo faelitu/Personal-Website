@@ -20,7 +20,7 @@
     <?php require_once "import.html"; ?>
     <?php require_once "functions.php"?>
 </head>
-<body>
+<body id="all">
     <?php 
     if ($lang === "pt-br") {
         require_once "body-pt.php";
