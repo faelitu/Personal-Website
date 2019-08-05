@@ -62,7 +62,7 @@ function rotateAndTransparent(element, degree) {
 
 function twinkle(element, delay) {
 	var dur = 300;
-	var opac = '0.2';
+	var opac = '0.4';
 	$(element).delay(delay).animate({
 		opacity: opac,
 		textShadow: '0 0 10px white'
@@ -114,7 +114,7 @@ $(document).ready(function(){
   	$(".inblock").after(star1, star2, lastStar); // Insert new elements after <img>
   	for (i = 0; i < qtd; i++) {
   		var size = Math.floor(Math.random() * 20) + 10;
-  		var nextStar = "<b id='star"+i+"' style='cursor: default; color: white; font-size: "+size+"px; position:fixed; text-shadow: 0 0 10px white'>&#8226</b>";
+  		var nextStar = "<b id='star"+i+"' style='cursor: default; color: white; font-size: "+size+"px; position:fixed; text-shadow: 0 0 10px white; z-index: 0'>&#8226</b>";
   		$("#star"+(i-1)).after(nextStar);
 
   		lastStar = nextStar;
@@ -144,5 +144,7 @@ $(document).ready(function(){
   		twinkle(document.getElementById('star'+i), delay);
   	}
 });
+
+//TODO criar funçao pra esconder a estrela, caso a foto passe por ela
 
 </script>

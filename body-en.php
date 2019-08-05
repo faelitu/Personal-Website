@@ -3,7 +3,7 @@
         <div id="parallax">
             <div class="container inblock">
                 <div id="desk" class="text-center">
-                    <img onclick="transparent(this)" class="profile-pic" src="assets/img/pic-profile.jpg" alt="Rafael Machado foto perfil">
+                    <img id="profile-pic" onclick="transparent(this)" class="profile-pic" src="assets/img/pic-profile.jpg" alt="Rafael Machado foto perfil">
                     <h1 class="nome">Rafael Machado</h1>
                     <h2 class="dev">developer</h2>
                 </div>
