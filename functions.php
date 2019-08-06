@@ -106,24 +106,32 @@ function twinkle(element, delay) {
 }
 
 function check() {
-	$pos = document.getElementById('barranav').offsetTop;
-  	if (window.pageYOffset === $pos) {
+  	var el = document.getElementById('barranav');
+	var pos = el.offsetTop;
+  	var viewportOffset = el.getBoundingClientRect();
+	// these are relative to the viewport, i.e. the window
+	var top = viewportOffset.top;
+	var left = viewportOffset.left;
+
+	if (window.pageYOffset === pos) {
   		$(".star").hide();
   	} else {
   		$(".star").show();
   	}
+
+  	console.log(window.innerHeight - 58+" : "+window.pageYOffset+" : "+top);
 }
 
 //stars
 $(document).ready(function(){
 	var qtd = 100;
-  	var star1 = "<b id='starA' class='star' style='cursor: default; color: white; font-size: 30px; position:fixed; text-shadow: 0 0 10px white'>&#8226</b>";
-  	var star2 = "<b id='starB' class='star' style='cursor: default; color: white; font-size: 20px; position:fixed; text-shadow: 0 0 10px white'>&#8226</b>";
-  	var lastStar = "<b id='star-1' class='star' style='cursor: default; color: white; font-size: 10px; position:fixed; text-shadow: 0 0 10px white'>&#8226</b>";
+  	var star1 = "<b id='starA' class='star' style='font-size: 10px;'>&#8226</b>";
+  	var star2 = "<b id='starB' class='star' style='font-size: 10px;'>&#8226</b>";
+  	var lastStar = "<b id='star-1' class='star' style='font-size: 10px;'>&#8226</b>";
   	$(".inblock").after(star1, star2, lastStar); // Insert new elements after <img>
   	for (i = 0; i < qtd; i++) {
   		var size = Math.floor(Math.random() * 20) + 10;
-  		var nextStar = "<b id='star"+i+"' class='star' style='cursor: default; color: white; font-size: "+size+"px; position:fixed; text-shadow: 0 0 10px white; z-index: 0'>&#8226</b>";
+  		var nextStar = "<b id='star"+i+"' class='star' style='font-size: "+size+"px;'>&#8226</b>";
   		$("#star"+(i-1)).after(nextStar);
 
   		lastStar = nextStar;
@@ -153,6 +161,9 @@ $(document).ready(function(){
   		twinkle(document.getElementById('star'+i), delay);
   	}
 
+  	if (window.pageYOffset === document.getElementById('barranav').offsetTop) {
+  		$(".star").hide();
+  	}
   	document.getElementById("all").addEventListener("wheel", check);
 });
 

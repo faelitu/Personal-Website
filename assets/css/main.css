@@ -65,10 +65,19 @@ a:hover {
     z-index: -2;
 }
 
+.star {
+    cursor: default;
+    color: white;
+    position:fixed;
+    text-shadow: 0 0 10px white;
+    z-index: 0;
+}
+
 .profile-pic {
     width: 30%;
     border-radius: 50%;
     cursor: pointer;
+    position: relative;
     z-index: 2;
 }
 
@@ -93,6 +102,8 @@ a:hover {
 .bloco {
     padding-top: 80px;
     padding-bottom: 80px;
+    position: relative;
+    z-index: 2;
 }
 
 .titulo {
@@ -116,6 +127,8 @@ a:hover {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    z-index: 2;
 }
 
 .parallax3 {
