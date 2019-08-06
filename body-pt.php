@@ -28,6 +28,7 @@
                     <a class="nav-item nav-link" href="#about">Sobre</a>
                     <a class="nav-item nav-link" href="#skills">Habilidades</a>
                     <a class="nav-item nav-link" href="<?php echo $root; ?>portfolio/">Portfólio</a>
+                    <a class="nav-item nav-link" href="<?php echo $root; ?>assets/doc/Curriculum_Vitae_Rafael_Machado.pdf" target="_blank">Currículo</a>
                     <a class="nav-item nav-link" href="#contact">Contato</a>
                     <!--<a class="nav-item nav-link disabled" href="#">Disabled</a>-->
                 </div>

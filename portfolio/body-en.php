@@ -29,14 +29,14 @@
             <li class="media">
                 <a href="http://paulamachado.info/"><img class="mr-3 port-img borda" src="../assets/img/pcom.png" alt="Pcom landing page"></a>
                 <div class="media-body">
-                    <h5 class="mt-0 mb-1 roboto-bold">Paula Machado Comunicação</h5>
-                    <p class="roboto">Professional page developed with WordPress.<br>Well placed on Google with SEO work.</p>
+                    <h5 class="mt-0 mb-1 roboto-bold">Paula Machado Communication</h5>
+                    <p class="roboto">Professional page developed with WordPress.<br>Well positioned on Google with SEO work.</p>
                 </div>
             </li>
             <br>
             <li class="media my-4">
                 <div class="media-body direita">
-                    <h5 class="mt-0 mb-1 roboto-bold">G2Ma - Arquitetura e Construções</h5>
+                    <h5 class="mt-0 mb-1 roboto-bold">G2Ma - Architecture and Constructions</h5>
                     <p class="roboto">Architecture office page developed with WordPress.</p>
                 </div>
                 <a href="http://g2ma.com.br/"><img class="mr-3 port-img borda" src="../assets/img/g2ma.png" alt="G2Ma landing page"></a>
