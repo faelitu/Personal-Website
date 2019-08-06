@@ -4,8 +4,10 @@ $status = "development"; //set as "production" or "development"
 
 if ($status === "development") {
 	$root = "/Personal-Website/";
+    $db = "rafadb";
 } else if ($status === "production") {
 	$root = "http://rafaelmachado.site/";
+    $db = "epiz_22101782_rafadb";
 }
 
 date_default_timezone_set('America/Sao_Paulo');

@@ -44,6 +44,11 @@ a {
     color: black;
 }
 
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
 #parallax {
     background-image: url("../img/bg.jpg");
 
