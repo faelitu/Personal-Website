@@ -32,20 +32,24 @@ function get_client_ip() {
 }
 
 if ($status === "production") {
-	$PublicIP = get_client_ip(); 
-	$json  = file_get_contents("http://ipinfo.io/$PublicIP/geo");
-	$json  =  json_decode($json ,true);
-	$country =  $json['country'];
-	$region= $json['region'];
-	$city = $json['city'];
-    if ($country === "BR" || $country === "PT") {
-        $lang = "pt-br";
+	$PublicIP = get_client_ip();
+    if ($PublicIP !== "UNKNOWN") {
+	   $json  = file_get_contents("http://ipinfo.io/$PublicIP/geo");
+	   $json  =  json_decode($json ,true);
+	   $country =  $json['country'];
+	   $region= $json['region'];
+	   $city = $json['city'];
     } else {
-        $lang = "en";
+        $country = "US";
     }
 } else if ($status === "development") {
 	$country = "BR";
+}
+
+if ($country === "BR" || $country === "PT") {
     $lang = "pt-br";
+} else {
+    $lang = "en";
 }
 
 if (array_key_exists("lang", $_GET)) {
