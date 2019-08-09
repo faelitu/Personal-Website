@@ -4,10 +4,20 @@ $status = "development"; //set as "production" or "development"
 
 if ($status === "development") {
 	$root = "/Personal-Website/";
-    $db = "rafadb";
+
+    define('DB_SERVER', 'localhost:3036');
+    define('DB_USERNAME', 'root');
+    define('DB_PASSWORD', 'password');
+    define('DB_DATABASE', 'rafadb');
+    $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 } else if ($status === "production") {
 	$root = "http://rafaelmachado.site/";
-    $db = "epiz_22101782_rafadb";
+
+    define('DB_SERVER', 'sql109.epizy.com');
+    define('DB_USERNAME', 'epiz_22101782');
+    define('DB_PASSWORD', 'password');
+    define('DB_DATABASE', 'epiz_22101782_rafadb');
+    $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 }
 
 date_default_timezone_set('America/Sao_Paulo');
