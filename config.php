@@ -5,7 +5,7 @@ $status = "development"; //set as "production" or "development"
 if ($status === "development") {
 	$root = "/Personal-Website/";
 
-    define('DB_SERVER', 'localhost:3036');
+    define('DB_SERVER', 'localhost:3306');
     define('DB_USERNAME', 'root');
     define('DB_PASSWORD', 'password');
     define('DB_DATABASE', 'rafadb');
@@ -21,6 +21,7 @@ if ($status === "development") {
 }
 
 date_default_timezone_set('America/Sao_Paulo');
+session_start();
 
 function get_client_ip() {
     $ipaddress = '';

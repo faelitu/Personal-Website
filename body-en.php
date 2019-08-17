@@ -32,7 +32,7 @@
                     <a class="nav-item nav-link" href="#contact">Contact</a>
                     <!--<a class="nav-item nav-link disabled" href="#">Disabled</a>-->
                 </div>
-                <div class="navbar-nav ml-auto">
+                <div class="navbar-nav ml-auto roboto">
                     <a class="nav-item nav-link" href="?lang=pt-br">pt</a>
                     
                     <li id="drop" class="nav-item dropdown">
@@ -40,7 +40,13 @@
                             <i class='fas fa-angle-down'></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+                            <?php if (isset($_SESSION['user'])) { ?>
+                                <a class="dropdown-item" href="system.php">Main Page</a>
+                                <a class="dropdown-item" href="horarios/">Schedule</a>
+                                <a class="dropdown-item" href="logout.php">Logout</a>
+                            <?php } else { ?>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+                            <?php } ?>
                         </div>
                     </li>
                 </div>
@@ -59,14 +65,14 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form name="loginForm" action="" method="POST">
+                    <form id="loginForm" name="loginForm" method="post" action="login.php">
                         <div class="form-group">
                             <label for="user" class="col-form-label font-weight-normal">Username</label>
-                            <input type="text" class="form-control" id="user" placeholder="Username">
+                            <input type="text" name="user" class="form-control" id="user" placeholder="Username">
                         </div>
                         <div class="form-group">
                             <label for="password" class="col-form-label font-weight-normal">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password">
+                            <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                         </div>
                         <div class="form-group">
                             <div class="custom-control custom-checkbox">
@@ -75,6 +81,10 @@
                                     Remember me
                                 </label>
                             </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn btn-primary">Entrar</button>
                         </div>
                     </form>
                 </div>

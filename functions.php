@@ -167,6 +167,4 @@ $(document).ready(function(){
   	document.getElementById("all").addEventListener("wheel", check);
 });
 
-//TODO criar funçao pra esconder a estrela, caso a foto passe por ela
-
 </script>
